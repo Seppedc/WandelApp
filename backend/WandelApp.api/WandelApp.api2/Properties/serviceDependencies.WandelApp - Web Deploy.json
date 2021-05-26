@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/wandelappapidbserver/databases/WandelApp.api_db",
+      "type": "mssql.azure",
+      "connectionId": "wandelContext",
+      "secretStore": "AzureAppSettings"
+    },
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/WandelAppapiapi/apis/WandelAppapi",
+      "type": "apis.azure",
+      "apiEndpoint": "https://wandelappapiapi.azure-api.net/"
+    }
+  }
+}

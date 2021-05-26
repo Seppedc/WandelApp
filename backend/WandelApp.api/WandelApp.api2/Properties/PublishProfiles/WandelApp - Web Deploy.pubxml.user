@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATTZqI+vTy06Gwkad88WdYwAAAAACAAAAAAAQZgAAAAEAACAAAABv3LijhUm7znLLLSJRWWIf7zN3QES+I5h3vwy6m+IprwAAAAAOgAAAAAIAACAAAAB6EHL3ppmEILvV79xGHQjM/foeOgChztgwVSocWb959YAAAAAIv4Ok0TM/Kx/dc2zYxWdcoLFIsHwBGqA18aSrKJkeCn70Q7l4yqS1q6MeqBFkRjobP98jidkR7HyVL9e4mtXhdzcoKTt/1T3Er8XfeNsMKVZCMsiwXgU5YHDs1Zb5WbNPXWSWhhPaKhaxJXmHhWWDRZWh+VJ0rVcx9q8drKA1XEAAAACsX5hVnBImTBKMEu5QuwC1uluNfWy2YpE4Skf7v5gPgMH0hAQSfPJDRvoaaNHTfejsZdEWl56CeqnkhxDCH9Vi</EncryptedPassword>
+    <History>True|2021-05-26T18:14:24.8402542Z;True|2021-05-25T11:58:10.8056587+02:00;True|2021-05-25T11:53:31.8688731+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="wandelContext">
+      <Value>Server=tcp:wandelappapidbserver.database.windows.net,1433%3bInitial Catalog=WandelApp.api_db%3bPersist Security Info=False%3bUser ID=Odisee%3bPassword=Azerty123%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

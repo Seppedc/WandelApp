@@ -1,0 +1,2040 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "WandelApp.api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Friend": {
+      "get": {
+        "tags": [
+          "Friend"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetFriendModel"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Friend"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostFriendModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetFriendModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/Friend/{id}": {
+      "get": {
+        "tags": [
+          "Friend"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetFriendModel"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Friend"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PutFriendModel"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Friend"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/Game": {
+      "get": {
+        "tags": [
+          "Game"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetGameModel"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Game"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostGameModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetGameModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/Game/{id}": {
+      "get": {
+        "tags": [
+          "Game"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetGameModel"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Game"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PutGameModel"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Game"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/Level": {
+      "get": {
+        "tags": [
+          "Level"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetLevelModel"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Level"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostLevelModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetLevelModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/Level/{id}": {
+      "get": {
+        "tags": [
+          "Level"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetLevelModel"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Level"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PutLevelModel"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Level"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/Pet": {
+      "get": {
+        "tags": [
+          "Pet"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetPetModel"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Pet"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostPetModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetPetModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/Pet/{id}": {
+      "get": {
+        "tags": [
+          "Pet"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetPetModel"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Pet"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PutPetModel"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Pet"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/User": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetUserModel"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostUserModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PostAuthenticationResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/User/{id}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetUserModel"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PutUserModel"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/User/authenticate": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostAuthenticationRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PostAuthenticationResponseModel"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/User/refresh-token": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/PostAuthenticationResponseModel"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/User/{id}/refresh-tokens": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetRefreshTokenModel"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/User/revoke-token": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostRevokeTokenRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/UserGame": {
+      "get": {
+        "tags": [
+          "UserGame"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetUserGameModel"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UserGame"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostUserGameModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetUserGameModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/UserGame/{id}": {
+      "get": {
+        "tags": [
+          "UserGame"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetUserGameModel"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UserGame"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PutUserGameModel"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UserGame"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/UserPet": {
+      "get": {
+        "tags": [
+          "UserPet"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/GetUserPetModel"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UserPet"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostUserPetModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetUserPetModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    },
+    "/api/UserPet/{id}": {
+      "get": {
+        "tags": [
+          "UserPet"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GetUserPetModel"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UserPet"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PutUserPetModel"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UserPet"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ProblemDetails"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "GetFriendModel": {
+      "required": [
+        "DateCreated"
+      ],
+      "type": "object",
+      "properties": {
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserFriendId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "DateCreated": {
+          "format": "date",
+          "type": "string"
+        }
+      }
+    },
+    "ProblemDetails": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "status": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "detail": {
+          "type": "string"
+        },
+        "instance": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": { }
+    },
+    "PostFriendModel": {
+      "type": "object",
+      "properties": {
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserFriendId": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "PutFriendModel": {
+      "type": "object",
+      "properties": {
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserFriendId": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "GetGameModel": {
+      "required": [
+        "Name",
+        "TotalPointsToEarn"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "TotalPointsToEarn": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserGames": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "PostGameModel": {
+      "required": [
+        "Name",
+        "TotalPointsToEarn"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "TotalPointsToEarn": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "PutGameModel": {
+      "required": [
+        "Name",
+        "TotalPointsToEarn"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "TotalPointsToEarn": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UserGames": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "GetLevelModel": {
+      "required": [
+        "MinimumPoints",
+        "Name"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "MinimumPoints": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "Users": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "PostLevelModel": {
+      "required": [
+        "MinimumPoints",
+        "Name"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "MinimumPoints": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "PutLevelModel": {
+      "required": [
+        "MinimumPoints",
+        "Name"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "MinimumPoints": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Users": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "GetPetModel": {
+      "required": [
+        "Experience",
+        "Level",
+        "Name"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Experience": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Level": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserPets": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "PostPetModel": {
+      "required": [
+        "Experience",
+        "Level",
+        "Name"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Experience": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Level": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "PutPetModel": {
+      "required": [
+        "Experience",
+        "Level",
+        "Name"
+      ],
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        },
+        "Experience": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Level": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "UserPets": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "GetUserModel": {
+      "required": [
+        "Age",
+        "CountPetsCaptured",
+        "CurrentPoints",
+        "Email",
+        "Password",
+        "UserName"
+      ],
+      "type": "object",
+      "properties": {
+        "Email": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "Password": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "UserName": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "Age": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "CurrentPoints": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CountPetsCaptured": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "NextLevelId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "NextLevelName": {
+          "type": "string"
+        },
+        "NextLevelPointsRequired": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CurrentLevelName": {
+          "type": "string"
+        },
+        "UserPets": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "Friends": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "UserGames": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "PostUserModel": {
+      "required": [
+        "Age",
+        "Email",
+        "Password",
+        "RepeatPassword",
+        "UserName"
+      ],
+      "type": "object",
+      "properties": {
+        "Email": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "Password": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "UserName": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "Age": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "RepeatPassword": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        }
+      }
+    },
+    "PostAuthenticationResponseModel": {
+      "type": "object",
+      "properties": {
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "Email": {
+          "type": "string"
+        },
+        "UserName": {
+          "type": "string"
+        },
+        "JwtToken": {
+          "type": "string"
+        }
+      }
+    },
+    "PutUserModel": {
+      "required": [
+        "Age",
+        "CountPetsCaptured",
+        "CurrentPoints",
+        "Email",
+        "Password",
+        "UserName"
+      ],
+      "type": "object",
+      "properties": {
+        "Email": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "Password": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "UserName": {
+          "maxLength": 45,
+          "minLength": 0,
+          "type": "string"
+        },
+        "Age": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CurrentPoints": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "CountPetsCaptured": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "NextLevelId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserPets": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "Friends": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "UserGames": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "PostAuthenticationRequestModel": {
+      "required": [
+        "Email",
+        "Password"
+      ],
+      "type": "object",
+      "properties": {
+        "Email": {
+          "type": "string"
+        },
+        "Password": {
+          "type": "string"
+        }
+      }
+    },
+    "GetRefreshTokenModel": {
+      "type": "object",
+      "properties": {
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "Token": {
+          "type": "string"
+        },
+        "Expires": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "IsExpired": {
+          "type": "boolean"
+        },
+        "Created": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "CreatedByIp": {
+          "type": "string"
+        },
+        "Revoked": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "RevokedByIp": {
+          "type": "string"
+        },
+        "ReplacedByToken": {
+          "type": "string"
+        },
+        "IsActive": {
+          "type": "boolean"
+        }
+      }
+    },
+    "PostRevokeTokenRequestModel": {
+      "type": "object",
+      "properties": {
+        "Token": {
+          "type": "string"
+        }
+      }
+    },
+    "GetUserGameModel": {
+      "required": [
+        "CountPlayed"
+      ],
+      "type": "object",
+      "properties": {
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "GameId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "CountPlayed": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "GameName": {
+          "type": "string"
+        },
+        "TotalPointsEarnedWithGame": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "PostUserGameModel": {
+      "type": "object",
+      "properties": {
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "GameId": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "PutUserGameModel": {
+      "required": [
+        "CountPlayed"
+      ],
+      "type": "object",
+      "properties": {
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "GameId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "CountPlayed": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "GetUserPetModel": {
+      "type": "object",
+      "properties": {
+        "PetId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "Id": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "PostUserPetModel": {
+      "type": "object",
+      "properties": {
+        "PetId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "PutUserPetModel": {
+      "type": "object",
+      "properties": {
+        "PetId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "UserId": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+#profileContainer #userInfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 1rem 1rem;
+}
+#profileContainer #userInfo img {
+    height: 15rem;
+}
+#profileContainer #userInfo #info {
+    flex-grow: 1;
+}
+#profileContainer #userInfo #info #userName {
+    margin: 0;
+}
+#profileContainer #userInfo #info #logoutLink {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+#profileContainer #userInfo #info #logoutLink #btnLogout {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+#profileContainer #userStats {
+    width: 90%;
+    margin: 0 auto;
+}
+#profileContainer #userStats h2 {
+    text-align: left;
+    margin: 0;
+}

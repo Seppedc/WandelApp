@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+<<<<<<< HEAD
+    ""
+  ],
+=======
+    "",
+    "\\backend",
+    "\\backend\\WandelApp.api"
+  ],
+  "SelectedNode": "\\backend\\WandelApp.api\\WandelApp.api.sln",
+>>>>>>> Userpage
+  "PreviewInSolutionExplorer": false
+}

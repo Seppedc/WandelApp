@@ -1,0 +1,14 @@
+#stats {
+    border-top: 2px solid black;
+}
+#stats .gameStats {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+#stats .gameStats h3 {
+    margin: 1rem 0 0 0;
+}
+.played, .encounterd, .earned {
+    margin: 0.5rem 1rem;
+}

@@ -1,0 +1,9 @@
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\bin\Debug\netcoreapp3.1\WandelApp.Models.deps.json
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\bin\Debug\netcoreapp3.1\WandelApp.Models.dll
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\bin\Debug\netcoreapp3.1\WandelApp.Models.pdb
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\obj\Debug\netcoreapp3.1\WandelApp.Models.csprojAssemblyReference.cache
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\obj\Debug\netcoreapp3.1\WandelApp.Models.AssemblyInfoInputs.cache
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\obj\Debug\netcoreapp3.1\WandelApp.Models.AssemblyInfo.cs
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\obj\Debug\netcoreapp3.1\WandelApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\obj\Debug\netcoreapp3.1\WandelApp.Models.dll
+C:\Users\marijn\Desktop\samenvattingen\derde jaar\WandelApp\wandelapp\backend\WandelApp.api\WandelApp.Models\obj\Debug\netcoreapp3.1\WandelApp.Models.pdb

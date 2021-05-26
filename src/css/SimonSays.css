@@ -1,0 +1,82 @@
+#SimonSays{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Colors{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 310px;
+}
+#Colors div {
+    width: 150px;
+    height: 150px;
+}
+#Rood{
+    background: red;
+    border-radius: 50px 0px 0px 0px;
+    /*
+    border-top: 2px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 2px solid black;
+
+     */
+}
+#Groen{
+    background: green;
+    border-radius: 0px 50px 0px 0px;
+    /*
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+
+     */
+}
+#Geel{
+    background: yellow;
+    border-radius: 0px 0px 0px 50px;
+    /*
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+
+     */
+}
+#Blauw{
+    background: blue;
+    border-radius: 0px 0px 50px 0px;
+    /*
+    border-top: 1px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+
+     */
+
+}
+#Start{
+    margin-top: 100px;
+    font-size: 22px;
+}
+.Animate{
+    border: 3px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.hidden{
+    visibility: hidden;
+}
+#DivReturn{
+    position: relative;
+
+}
+#Return{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
