@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'WandelAppFrontend'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_3fd3db2c6108477493af4765c1763dd7 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_79453ad060624c68ba212e454d5f4d87 }}
         package: .
